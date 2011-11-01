@@ -8,13 +8,14 @@ For when you don't really want to be that strict, will attempt to parse
 
 ## Install
 
-npm install connect-hopeful-body-parser
+    npm install connect-hopeful-body-parser
 
 ## Usage
 
 Add to the connect middleware chain, `req.body` will be set to either the
 parsed object, or null.
 
+    // server.js
     var connect = require('connect');
     var bodyParser = require('connect-hopeful-body-parser');
     var server = connect(
@@ -25,14 +26,18 @@ parsed object, or null.
     );
     server.listen(9999);
 
-    curl localhost:9999 -d '{"value" : {"a" : 1}}'
+    # Once the server is running...
+    $ curl localhost:9999 -d '{"value" : {"a" : 1}}'
     { value: { a: 1 } }
 
-    curl localhost:9999 -d 'value[a]=1'
+    $ curl localhost:9999 -d 'value[a]=1'
     { value: { a: 1 } }
 
-    curl "localhost:9999?value\[a\]=1"
+    $ curl "localhost:9999?value\[a\]=1"
     { value: { a: 1 } }
+
+    $ curl "localhost:9999"
+    null
 
 ## License
 
