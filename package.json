@@ -1,0 +1,24 @@
+{
+  "author": "Glen Mailer <glenjamin@gmail.com>",
+  "name": "connect-hopeful-body-parser",
+  "description": "Attempt to parse body data without an Accept header",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/glenjamin/connect-hopeful-body-parser.git"
+  },
+  "license": "MIT",
+  "main": "lib/connect-hopeful-body-parser",
+  "scripts": {
+    "test": "node spec/connect-hopeful-body-parser-spec.js"
+  },
+  "engines": {
+    "node": "~0.4.12"
+  },
+  "dependencies": {
+    "qs": ">= 0.3.1"
+  },
+  "devDependencies": {
+    "nodespec": "~0.1.0"
+  }
+}
