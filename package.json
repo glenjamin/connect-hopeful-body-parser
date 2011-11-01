@@ -2,7 +2,7 @@
   "author": "Glen Mailer <glenjamin@gmail.com>",
   "name": "connect-hopeful-body-parser",
   "description": "Attempt to parse body data without an Accept header",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/glenjamin/connect-hopeful-body-parser.git"
