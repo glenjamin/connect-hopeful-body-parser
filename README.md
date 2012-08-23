@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/glenjamin/connect-hopeful-body-parser.png)](http://travis-ci.org/glenjamin/connect-hopeful-body-parser)
 # connect-hopeful-body-parser
 
 For when you don't really want to be that strict, will attempt to parse
